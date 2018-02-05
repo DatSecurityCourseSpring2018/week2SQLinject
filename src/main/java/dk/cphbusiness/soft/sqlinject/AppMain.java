@@ -7,16 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- The purpose of AppMain is to...
-
- @author kasper
- */
 public class AppMain {
 
     public static void main( String[] args ) throws SQLException, ClassNotFoundException {
-        String id = "2"; //2 or 1=1";
-        String name = "Jens"; //' or ''='";
+        String id = "2"; 
+        String name = "Jens"; 
         injectSimpleStatement( id, name );
         injectPreparedStatement( id, name );
     }
